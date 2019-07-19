@@ -1,0 +1,19 @@
+button {
+  background: lightgreen;
+}
+
+.danger {
+  background: lightcoral;
+}
+
+.title{
+  color: red;
+}
+#box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 100px;
+  transition: 500ms;
+}

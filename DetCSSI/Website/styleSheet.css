@@ -1,0 +1,58 @@
+p {
+  color: green;
+}
+body {
+  background-color: white;
+  margin: auto;
+  width: 75%;
+}
+.example-img{
+  width: 250px;
+  height: auto;
+}
+h2 {
+  color: 	#FF4500;
+  border-width: 1px;
+}
+section {
+  background-color: #D3D3D3;
+  border-width: 1px;
+  width: auto;
+}
+h1{
+  color: #FF4400;
+  background-color: white;
+  border-width: 1px;
+  width: 400px;
+}
+#favorite{
+  color: green;
+}
+.red{
+  height:150px;
+  width: 250px;
+  background-color: red;
+  border: 2px;
+  border-color: grey;
+  align-self: flex-start;
+}
+.blue{
+  height:150px;
+  width: 250px;
+  background-color: blue;
+  border: 2px;
+  border-color: grey;
+  align-self: flex-end;
+}
+.green{
+  height:150px;
+  width: 250px;
+  background-color: green;
+  border: 2px;
+  border-color: grey;
+
+}
+.examples{
+    display: flex;
+    justify-content: center;
+}
