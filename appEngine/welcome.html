@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body class = "page">
+    <div class= "top">
+      <div class = "redirect">
+        <a  class = "link" href="/result">RESULTS</a>
+      </div>
+      <div class = "redirect">
+        <a  class = "link" href="/gallery">GALLERY</a>
+      </div>
+      <div class = "redirect">
+        <a  class = "link" href="/faq">FAQ</a>
+      </div>
+    </div>
+    <h1>Make Your Meme</h1>
+    <form method = "post" autocomplete="off" action="/result">
+      <div class="memeSelect">
+        {% for url in imgs %}
+        <label>
+          <input type="radio" name="template" value="{{url}}" checked>
+          <img class = "display" src="{{url}}">
+        </label>
+        {% endfor %}
+      </div>
+      <br>
+      <input type="text" name="top-line" value="Top Line"/>
+      <input type="text" name="bottom-line" value="Bottom Line"/>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>

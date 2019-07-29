@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <h1>{{head1}}</h1>
+    <div class="gallery">
+      {% for meme in memes%}
+          <div class="galleryElement">
+            <h4> {{meme.top_text}}</h4>
+            <img class = "galleryImg" src="{{meme.url}}"/>
+            <h4>{{meme.bottom_text}}</h4>
+          </div>
+      {% endfor %}
+    </div>
+    <a href="/">GO BACK</a>
+  </body>
+</html>
